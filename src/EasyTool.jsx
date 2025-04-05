@@ -21,8 +21,7 @@ const copyToClipboardAndRedirect = () => {
 
   navigator.clipboard.writeText(postText).then(() => {
     alert("Copied your replacement story to clipboard. Paste it proudly on LinkedIn.");
-    window.open("https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Feasytoolai.vercel.app&title=My+replacement+story&summary=I'm+grateful+for+the+growth+that+came+with+being+automated+out+of+relevance.&source=EasyTool
-", "_blank");
+    window.open("https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Feasytoolai.vercel.app&title=My+replacement+story&summary=I'm+grateful+for+the+growth+that+came+with+being+automated+out+of+relevance.&source=EasyTool", "_blank");
   });
 };
 
