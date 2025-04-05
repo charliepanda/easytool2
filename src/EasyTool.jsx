@@ -167,7 +167,7 @@ export default function EasyTool() {
         {showSteps && (
           <div className="mt-12 text-left max-w-6xl mx-auto">
             <h3 className="text-2xl font-semibold text-center mb-10">Watch it in action:</h3>
-            <div className="flex flex-wrap justify-center gap-2 items-center">
+            <div className="grid grid-flow-col auto-cols-max gap-4 justify-center items-center">
               {steps.map((step, idx) => (
                 <div key={idx} className="flex items-center">
                   <div className={`p-4 rounded-xl w-64 text-center min-h-[80px] flex items-center justify-center border ${
