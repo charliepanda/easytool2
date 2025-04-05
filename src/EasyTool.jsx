@@ -198,7 +198,10 @@ export default function EasyTool() {
         <div className="text-center text-sm italic text-gray-600 mt-100">
           “The AI truly understands our values — and acts on them better than we ever could.” – Internal blog post
         </div>
+        <div className="h-40" /> {/* pushes the quote down further */}
+
       </section>
+<div className="h-100" /> {/* pushes the quote down further */}
 
       <footer className="text-center mt-200 text-sm text-gray-500">
         © 2025 EasyTool. All rights revoked.
