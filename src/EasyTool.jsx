@@ -177,7 +177,10 @@ export default function EasyTool() {
                   }`}>
                     {step || <span className="text-gray-500 italic">Loading...</span>}
                   </div>
-                  {idx < steps.length - 1 && <div className="mx-2 text-xl text-white/40">→</div>}
+                  {(idx !== 2 && idx !== steps.length - 1) && (
+  <div className="mx-2 text-xl text-white/40">→</div>
+)}
+
                 </div>
               ))}
             </div>
