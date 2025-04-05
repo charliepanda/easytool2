@@ -189,9 +189,15 @@ export default function EasyTool() {
         {steps.includes("✅ All done. That was deeply meaningful for absolutely no one.") && (
           <div className="mt-10 text-center text-green-400 space-y-4">
             <div className="text-xs text-gray-400">Want to be rehired? Unfortunately, that feature is still in beta.</div>
-            <Button className="bg-sky-600 hover:bg-sky-700 text-white px-6 py-2 rounded-xl">
-              📤 Share your replacement story on LinkedIn
-            </Button>
+<a
+  href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Feasytool.ai&title=My+Replacement+Story&summary=After+being+automated+out+of+my+role+by+EasyTool%2C+I+finally+have+time+to+focus+on+what+truly+matters%3A+crafting+the+perfect+LinkedIn+post.&source=EasyTool"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block bg-sky-600 hover:bg-sky-700 text-white px-6 py-2 rounded-xl transition"
+>
+  📤 Share your replacement story on LinkedIn
+</a>
+
           </div>
         )}
 
