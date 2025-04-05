@@ -119,33 +119,33 @@ export default function EasyTool() {
       <header className="text-center space-y-6">
         <h1 className="text-7xl font-extrabold tracking-tight text-white">🧠 EasyTool</h1>
         <p className="text-xl max-w-2xl mx-auto text-gray-400">
-          The enterprise-ready AI suite that builds tools, replaces roles, and disrupts reality.
+          Making the AI Tools that make making AI Tools easier - even easier.
         </p>
       </header>
 
       <section className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
         <Card className="bg-[#1A1A1D] border border-[#333]">
           <CardContent className="p-6 space-y-2">
-            <h2 className="text-lg font-semibold text-white">🤹 Effortless Automation</h2>
-            <p className="text-gray-400">Built to simplify workflows you didn't know could be complicated.</p>
+            <h2 className="text-lg font-semibold text-white">🤹 Writing AI Prompts is exhausting work.</h2>
+            <p className="text-gray-400">No more sore fingers from typing and hitting the 'generate' button- EasyTool's got you covered.</p>
           </CardContent>
         </Card>
         <Card className="bg-[#1A1A1D] border border-[#333]">
           <CardContent className="p-6 space-y-2">
-            <h2 className="text-lg font-semibold text-white">📉 Redundancy-as-a-Service</h2>
+            <h2 className="text-lg font-semibold text-white">🔁 Chasing the next AI workflow hack?</h2>
+            <p className="text-gray-400">EasyTool is the shortcut to the shortcut to the shortcut.</p>
+          </CardContent>
+        </Card>
+        <Card className="bg-[#1A1A1D] border border-[#333]">
+          <CardContent className="p-6 space-y-2">
+            <h2 className="text-lg font-semibold text-white">📉 Workflows so automated, they'll make you practically disposable.</h2>
             <p className="text-gray-400">You're not obsolete — you're just ahead of the curve… out the door.</p>
-          </CardContent>
-        </Card>
-        <Card className="bg-[#1A1A1D] border border-[#333]">
-          <CardContent className="p-6 space-y-2">
-            <h2 className="text-lg font-semibold text-white">🌐 Recursive Innovation</h2>
-            <p className="text-gray-400">The future of the future of the future is here.</p>
           </CardContent>
         </Card>
       </section>
 
       <section className="max-w-5xl mx-auto text-center space-y-8">
-        <h2 className="text-3xl font-bold">Try it now!</h2>
+        <h2 className="text-3xl font-bold">Create your AI tool now!</h2>
                 <Button
           onClick={handleGenerate}
           disabled={generating}
@@ -177,9 +177,8 @@ export default function EasyTool() {
                   }`}>
                     {step || <span className="text-gray-500 italic">Loading...</span>}
                   </div>
-                  {(idx !== 2 && idx !== steps.length - 1) && (
-  <div className="mx-2 text-xl text-white/40">→</div>
-)}
+{idx < steps.length - 1 && <div className="mx-2 text-xl text-white/40">→</div>}
+
 
                 </div>
               ))}
