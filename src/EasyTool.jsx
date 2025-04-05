@@ -17,7 +17,7 @@ const CardContent = ({ className = '', children }) => (
 
 const copyToClipboardAndRedirect = () => {
   const postText =
-    "After being replaced by EasyTool, I finally had time to reflect. I’m grateful, humbled, and ready to network harder than ever before.";
+    "After being automated out of my role by EasyTool, I finally have time to focus on what truly matters: crafting the perfect LinkedIn post.";
 
   navigator.clipboard.writeText(postText).then(() => {
     alert("Copied your replacement story to clipboard. Paste it proudly on LinkedIn.");
