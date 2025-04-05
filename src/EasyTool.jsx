@@ -167,22 +167,25 @@ export default function EasyTool() {
         {showSteps && (
           <div className="mt-12 text-left max-w-6xl mx-auto">
             <h3 className="text-2xl font-semibold text-center mb-10">Watch it in action:</h3>
-             <div className="grid grid-cols-3 gap-4 justify-center items-start">
-              {steps.map((step, idx) => (
-                <div key={idx} className="flex flex-col items-center space-y-2">
-                  <div className={`p-4 rounded-xl w-64 text-center min-h-[80px] flex items-center justify-center border ${
-                    step?.startsWith("✅")
-                      ? "border-green-400 bg-[#1A1A1D] text-green-400"
-                      : "border-[#333] bg-[#1A1A1D] text-white"
-                  }`}>
-                    {step || <span className="text-gray-500 italic">Loading...</span>}
-                  </div>
-                  {idx < steps.length - 1 && <div className="mx-2 text-xl text-white/40">→</div>}
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
+<div className="flex flex-wrap justify-center items-center gap-4 flex-row">
+  {steps.map((step, idx) => (
+    <>
+      <div
+        key={`step-${idx}`}
+        className={`p-4 rounded-xl w-64 text-center min-h-[80px] flex items-center justify-center border ${
+          step?.startsWith("✅")
+            ? "border-green-400 bg-[#1A1A1D] text-green-400 animate-pulse-sparkle"
+            : "border-[#333] bg-[#1A1A1D] text-white"
+        }`}
+      >
+        {step || <span className="text-gray-500 italic">Loading...</span>}
+      </div>
+      {idx < steps.length - 1 && (
+        <div key={`arrow-${idx}`} className="text-2xl text-white/40 px-2 self-center">→</div>
+      )}
+    </>
+  ))}
+</div>
 
         {steps.includes("✅ All done. That was deeply meaningful for absolutely no one.") && (
           <div className="mt-10 text-center text-green-400 space-y-4">
