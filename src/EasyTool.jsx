@@ -21,7 +21,8 @@ const copyToClipboardAndRedirect = () => {
 
   navigator.clipboard.writeText(postText).then(() => {
     alert("Copied your replacement story to clipboard. Paste it proudly on LinkedIn.");
-    window.open("https://www.linkedin.com", "_blank");
+    window.open("https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Feasytoolai.vercel.app&title=My+replacement+story&summary=I'm+grateful+for+the+growth+that+came+with+being+automated+out+of+relevance.&source=EasyTool
+", "_blank");
   });
 };
 
@@ -199,9 +200,9 @@ export default function EasyTool() {
         {steps.includes("✅ All done. That was deeply meaningful for absolutely no one.") && (
           <div className="mt-10 text-center text-green-400 space-y-4">
             <div className="text-xs text-gray-400">Want to be rehired? Unfortunately, that feature is still in beta.</div>
-// <Button onClick={copyToClipboardAndRedirect} className="bg-sky-600 hover:bg-sky-700 text-white px-6 py-2 rounded-xl">
-//   📤 Share your replacement story on LinkedIn
-// </Button>
+ <Button onClick={copyToClipboardAndRedirect} className="bg-sky-600 hover:bg-sky-700 text-white px-6 py-2 rounded-xl">
+   📤 Share your replacement story on LinkedIn
+ </Button>
 
           </div>
         )}
