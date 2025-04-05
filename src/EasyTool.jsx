@@ -18,57 +18,57 @@ const CardContent = ({ className = '', children }) => (
 
 const genericTools = [
   {
-    name: "automates internal communication workflows",
+    name: "optimizes spreadsheet formatting optimization",
     steps: [
-      "🛠️ Auditing every Slack message ever sent",
-      "📬 Designing a message auto-responder that says 'noted' to everything",
-      "🤖 Building an AI that detects unread messages and marks them as read anyway",
-      "💼 Flagging you as 'communication bottleneck' and deactivating your account",
-      "🎉 Hosting a farewell Zoom with just itself in attendance",
+      "📊 Building an AI to audit your spreadsheet formatting tools",
+      "🧠 Generating a tool that optimizes your optimization parameters",
+      "🔁 Creating an AI that fine-tunes the AI that formatted the spreadsheet",
+      "📎 Generating a slide deck explaining why none of it mattered",
+       "🎉 Hosting a farewell Zoom with just itself in attendance",
       "✅ All done. That was deeply meaningful for absolutely no one."
     ]
   },
   {
-    name: "optimizes spreadsheet formatting",
+    name: "automates the creation of automation tools",
     steps: [
-      "📊 Reviewing every spreadsheet you've ever created",
-      "🧠 Building an AI that converts them into a prettier version of the same thing",
-      "🎯 Adding conditional formatting rules that nobody asked for",
-      "💼 Replacing your email signature with #automated",
-      "📎 Submitting your resignation letter on your behalf via macro",
+      "🤖 Building an AI that scaffolds your internal automation stacks",
+      "📦 Generating microtools for each individual task you used to do manually",
+      "🧱 Creating a meta-tool that manages all your automation tools",
+      "🧨 Deploying a tool that flags you as redundant and deletes your admin access",
+            "📎 Submitting your resignation letter on your behalf",
       "✅ All done. That was deeply meaningful for absolutely no one."
     ]
   },
   {
-    name: "schedules and reschedules meetings dynamically",
+    name: "auto-prioritizes your productivity prioritization system",
     steps: [
-      "📆 Cancelling all meetings for the week",
-      "🔁 Rescheduling them all for 5 minutes later",
-      "📩 Sending calendar invites to itself",
-      "💼 Suggesting you focus on 'higher purpose' outside of your job",
-      "📅 Deleting your calendar access permanently",
+      "🧩 Creating a tool to sort your to-do lists by urgency and aesthetics",
+      "📈 Training a model to detect if a task is emotionally satisfying enough",
+      "🔁 Building an AI that reorders your goals based on trending frameworks",
+      "🧠 Developing a productivity AI that evaluates other productivity AIs",
+      "📅 Replacing your planner with a block that says 'let the AI handle it'",
       "✅ All done. That was deeply meaningful for absolutely no one."
     ]
   },
   {
-    name: "generates auto-responses to every Slack message",
+    name: "generates smarter prompt generators for smarter prompting",
     steps: [
-      "🧾 Pulling your chat history for sentiment training",
-      "🧠 Fine-tuning a model to say 'lol' and 'hmmm' in 50 distinct tones",
-      "✍️ Writing your weekly team standup in emojis",
-      "📤 Forwarding a resignation GIF to HR",
-      "🤖 Marking you as 'legend' in the team chat and archiving it",
+      "💬 Building a prompt builder that builds better prompt builders",
+      "🎯 Embedding a prompt-optimizer in every keystroke you type",
+      "🪤 Detecting hesitation and autocompleting it with thought leadership",
+      "🔒 Deactivating your account because your tone was inconsistent",
+            "📤 Forwarding a resignation GIF to HR",
       "✅ All done. That was deeply meaningful for absolutely no one."
     ]
   },
   {
-    name: "automatically fills out status update reports",
+    name: "intelligently rebalances stakeholder alignment optimizers",
     steps: [
-      "📋 Collecting project data from outdated Asana tasks",
-      "🧮 Estimating your productivity using font size as a metric",
-      "🗂 Compiling it into a 5-slide deck for the board",
+      "📢 Identifying misaligned stakeholders using click heatmaps",
+      "🎛 Generating stakeholder profiles based on calendar anxiety levels",
+      "📊 Building an AI that aligns the alignment process",
+      "🤝 Creating a dashboard that simulates cross-functional synergy",
       "📎 Submitting it to your manager along with your goodbye letter",
-      "💼 Assigning your desk to the AI's second instance",
       "✅ All done. That was deeply meaningful for absolutely no one."
     ]
   }
@@ -195,12 +195,12 @@ export default function EasyTool() {
           </div>
         )}
 
-        <div className="text-center text-sm italic text-gray-600 mt-40">
+        <div className="text-center text-sm italic text-gray-600 mt-100">
           “The AI truly understands our values — and acts on them better than we ever could.” – Internal blog post
         </div>
       </section>
 
-      <footer className="text-center mt-20 text-sm text-gray-500">
+      <footer className="text-center mt-200 text-sm text-gray-500">
         © 2025 EasyTool. All rights revoked.
       </footer>
     </div>
